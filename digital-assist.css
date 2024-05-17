@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    }
+
+    /* Add a gray background color with some padding */
+    body {
+    font-family: Arial;
+    /* padding: 20px; */
+    background: #0c0c12;
+    }
+    /* Navbar styles */
+    .navbar {
+        background-color:#0c0c12;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 20px;
+        /* Increased top and bottom padding */
+    }
+
+    .navbar-brand img {
+        height: 40px;
+        /* Adjust according to your logo height */
+    }
+
+    .navbar-nav {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        /* Align items vertically */
+    }
+
+    .navbar-nav li {
+        position: relative;
+        margin-right: 20px;
+    }
+
+    .navbar-nav li:last-child {
+        margin-right: 0;
+    }
+
+    .navbar-nav li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .navbar-nav li a:hover {
+        color: #ff0;
+        /* Change the color on hover */
+    }
+
+    /* Centering the navbar items */
+    .navbar-nav {
+        flex: 1;
+        justify-content: center;
+    }
+
+    /* Dropdown styles */
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        padding: 10px;
+        top: 100%;
+        /* Position the dropdown below the parent item */
+        left: 0;
+        z-index: 1;
+    }
+
+    /* Display the dropdown menu on hover */
+    .navbar-nav li:hover .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        padding: 5px 0;
+        width: 200px;
+    }
+
+    .dropdown-menu a:hover {
+        background-color: #555;
+    }
+    
+    .banner {
+        background-image: url('assets/brtc.jpg');
+        /* Replace 'your-image.jpg' with the path to your image */
+        /* background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; */
+        padding: 50px 20px;
+        text-align: center;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    /* Header/Blog Title */
+    .header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: #0c0c12;
+    }
+
+    /* Create two unequal columns that floats next to each other */
+    /* Left column */
+    .leftcolumn {   
+    float: left;
+    
+    }
+
+    /* Right column */
+    .rightcolumn {
+    float: left;
+    width: 25%;
+    /* padding-left: 20px; */
+    }
+
+    /* Fake image */
+    /* .fakeimg {
+    background-color: #0c0c12;
+
+    } */
+
+    /* Add a card effect for articles */
+    .card {
+    background-color: #161621;
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+    }
+    /* Comment section styles */
+    .comment-section {
+        padding: 20px;
+        color: white;
+    }
+    .row{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer {
+        background-color: #0c0c12;
+        color: #fff;
+        padding: 50px 0;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer-bottom {
+        text-align: center;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    a:hover{
+        color: green;
+    }

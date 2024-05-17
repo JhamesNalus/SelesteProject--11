@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="index.html"><img src="assets/logo1.png" alt="Logo"></a>
+        </div>
+
+        <ul class="navbar-nav">
+            <li>
+                <a href="index.html">Home</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Animation Home</a></li>
+                    <li><a href="#">Main Demo</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li>
+                <a href="#">Pages</a>
+                <ul class="dropdown-menu">
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="roadmap.html">Roadmap</a></li>
+                </ul>
+            </li>
+            <li><a href="roadmap.html">Roadmap</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+    <section class="blog-section">
+    <div class="blog-container">
+        <div class="blog">
+            <img src="assets/blog-2.jpg" alt="Blog 1">
+            <p class="date"><a class="author" href="">NFT</a>&nbsp;&nbsp; March 30, 2022</p>
+            <h1 class="title"><a href="project-marketplace.html">Project Marketplace</a></h1>
+        </div>
+        <div class="blog">
+            <img src="assets/blog-3.jpg" alt="Blog 2">
+            <p class="date"><a class="author" href="">NFT</a>&nbsp;&nbsp;March 30, 2022</p>
+            <h1 class="title"><a href="nft-digital-market.html">NFT Digital Market</a></h1>
+        </div>
+        <div class="blog">
+            <img src="assets/blog-2.jpg" alt="Blog 3">
+            <p class="date"><a class="author" href="">NFT</a>&nbsp;&nbsp;March 30, 2022</p>
+            <h1 class="title"><a href="digital-marketplace.html">Digital Marketplace</h1></a>
+        </div>
+        <div class="blog">
+            <img src="assets/blog-04.jpg" alt="Blog 4">
+            <p class="date"><a class="author" href="">NFT</a>&nbsp;&nbsp;March 30, 2022</p>
+            <h1 class="title"><a href="nft-marketplace.html" >NFT Marketplace</h1></a>
+        </div>
+        <div class="blog">
+            <img src="assets/blog-1.jpg" alt="Blog 5">
+            <p class="date"><a class="author" href="">NFT</a>&nbsp;&nbsp;March 30, 2022</p>
+            <h1 class="title"><a href="interaction.html">What Interaction Exit?</h1></a>
+        </div>
+        <div class="blog">
+            <img src="assets/blog-2.jpg" alt="Blog 6">
+            <p class="date"><a class="author" href="">NFT</a>&nbsp;&nbsp;March 30, 2022</p>
+            <h1 class="title"><a href="digital-assists.html">NFT Digital Assists</h1></a>
+        </div>
+    </div>
+</section>
+  <div class="subscription-form">
+    <h1>Subscribe to Our Newsletter</h1>
+    <p>Get exclusive updates!</p>
+    <form>
+        <input type="email" placeholder="Enter your email">
+        <button type="submit">Subscribe</button>
+    </form>
+</div>
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 2: Logo and Description -->
+            <div class="footer-column1">
+                <img src="assets/logo1.png" alt="Cryptobit Logo">
+                <p>Join us at Cryptobit and sell your digital assets worldwide.</p>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: More Quick Links -->
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </div>
+        </div>
+</div>
+    <!-- Bottom Section: Copyright Notice -->
+    <div class="footer-bottom">
+        <div class="container">
+            <p>© 2024 CryptoBit. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+      $(document).ready(function() {
+          $('.brand-carousel').owlCarousel({
+              loop: true,
+              autoplay: true,
+              autoplayTimeout: 4000,
+              dots: false,
+              nav: false,
+              responsive: {
+                  0: {
+                      items: 1
+                  },
+                  768: {
+                      items: 2
+                  },
+                  992: {
+                      items: 3
+                  },
+                  1500: {
+                      items: 4
+                  }
+              }
+          });
+      });
+</script>
+</body>
+</html>

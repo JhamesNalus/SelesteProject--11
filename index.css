@@ -1,0 +1,608 @@
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            background-color: #0c0c12;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 20px;
+            /* Increased top and bottom padding */
+        }
+
+        .navbar-brand img {
+            height: 40px;
+            /* Adjust according to your logo height */
+        }
+
+        .navbar-nav {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+            /* Align items vertically */
+        }
+
+        .navbar-nav li {
+            position: relative;
+            margin-right: 20px;
+            list-style: none;
+        }
+
+        .navbar-nav li:last-child {
+            margin-right: 0;
+        }
+
+        .navbar-nav li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .navbar-nav li a:hover {
+            color: #ff0;
+            /* Change the color on hover */
+        }
+
+        /* Centering the navbar items */
+        .navbar-nav {
+            flex: 1;
+            justify-content: center;
+        }
+
+        /* Dropdown styles */
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            padding: 10px;
+            top: 100%;
+            /* Position the dropdown below the parent item */
+            left: 0;
+            z-index: 1;
+        }
+
+        /* Display the dropdown menu on hover */
+        .navbar-nav li:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-menu a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 0;
+            width: 200px;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #555;
+        }
+
+        /* Button styles */
+        .btn {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: white;
+            color: green;
+        }
+
+        .banner {
+            background-image: url('assets/slider.jpg');
+            /* Replace 'your-image.jpg' with the path to your image */
+            background-size: cover;
+            background-position: center;
+            padding: 50px 20px;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .banner .container {
+            background-color: rgba(255, 255, 255, 0);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .banner-content {
+            display: flex;
+            justify-content: space-around;
+            /* Adjust the space between card and text */
+        }
+
+        .banner-card,
+        .banner-text {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .banner-card {
+            background-color: #ffffff00;
+            /* Adjust the card background color */
+        }
+
+        .banner-text {
+            background-color: rgba(255, 255, 255, 0.7);
+            /* Optional: Adjust the text background color */
+        }
+
+        .banner h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .banner p {
+            font-size: 18px;
+        }
+
+        .banner-content {
+            display: flex;
+            justify-content: space-around;
+            /* Adjust the space between card and text */
+            align-items: center;
+            /* Align items vertically */
+        }
+
+        .banner-text {
+            background-color: rgba(255, 255, 255, 0);
+            /* Light background color */
+            padding: 30px;
+            /* Increased padding for better spacing */
+            border-radius: 15px;
+            /* Rounded corners */
+            width: 400px;
+            /* Width of the text section */
+            margin-left: 20px;
+            /* Spacing between card and text */
+            text-align: center;
+            /* Center-align text */
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            /* Soft shadow for depth */
+        }
+
+        .banner-text h2 {
+            font-size: 24px;
+            /* Larger font size for heading */
+            color: #ffffff;
+            /* Darker color for heading */
+            margin-bottom: 20px;
+            /* Spacing between heading and content */
+        }
+
+        .person-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* Center-align
+            the content */
+            margin-bottom: 20px;
+            /* Spacing between name/title and button */
+        }
+
+        .person-info img {
+            width: 60px;
+            /* Size of the icon */
+            height: 60px;
+            border-radius: 50%;
+            /* Circular shape for the icon */
+            margin-right: 15px;
+            /* Spacing between icon and text */
+        }
+
+        .person-info .info {
+            text-align: left;
+            /* Align text to the left */
+        }
+
+        .person-info h3 {
+            margin: 0;
+            font-size: 18px;
+            /* Font size for name */
+            color: #ffffff;
+            /* Darker color for name */
+        }
+
+        .person-info p {
+            margin: 0;
+            font-size: 14px;
+            /* Font size for title */
+            color: #ffffff;
+            /* Slightly lighter color for title */
+        }
+
+        /* New Section Styles */
+        .new-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .row {
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+        }
+
+        .col {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+        }
+
+
+        div.mycontainer {
+            color: white;
+            width: 100%;
+            overflow: auto;
+            display: flex;
+            background-image: url(assets/about-bg.jpg);
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+        }
+
+        div.mycontainer div {
+            width: 50%;
+            float: left;
+        }
+
+        div.col {
+            text-align: left;
+            padding: 150px;
+        }
+
+        h6 {
+            font-size: larger;
+        }
+
+        h1 {
+            font-size: 64px;
+        }
+
+        .wrapper {
+            max-height: 120px;
+            border: 1px solid #ddd;
+            display: flex;
+            overflow-x: auto;
+        }
+
+        .wrapper::-webkit-scrollbar {
+            width: 0;
+        }
+
+        .wrapper .item {
+            width: 110px;
+            height: 110px;
+            line-height: 110px;
+            text-align: center;
+            background-color: #ddd;
+        }
+
+        .brand-carousel {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-color: #000000;
+            
+        }
+
+        .single_brand {
+            width: 250px; /* Adjust the width to your preference */
+            height: 100px; /* Adjust the height to your preference */
+            background-color: #0f0f0f;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .brand-thumb img {
+            max-width: 80%;
+            max-height: 80%;
+            object-fit: contain;
+        }
+
+
+
+/* Second container */
+ .second-container {
+    display: flex;
+    background-image: url('assets/bg-bg.jpg'); /* Background image for the second container */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white ;
+    margin: auto;
+       height: 50vh;
+    display: flex;
+    align-items: center;
+
+}
+.team-description{
+
+
+    padding: 10px;
+
+}
+/* Button Styles */
+.custom-button {
+  position: relative; /* Gawing relative para maging anchor point ng absolute na pseudo-element */
+  background-color: transparent; /* Transparent na background sa normal na estado */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  overflow: hidden; /* I-set ang overflow sa hidden upang hindi lumitaw ang pseudo-element sa normal na estado */
+}
+
+.custom-button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%; /* Simulan ang pseudo-element sa kalahati ng button */
+  height: 100%;
+  background-color: rgba(128, 0, 128, 0.5); /* Kulay ng background na half-opacity (purple) */
+  transition: width 0.3s ease; /* Paglipat ng animasyon kapag nag-hover */
+}
+
+.custom-button:hover:before {
+  width: 100%; /* Pag-hover, magiging buo ang kulay ng background */
+}
+.third-container {
+    /* max-width: 1200px; */
+    margin: auto;
+    padding: 20px;
+    background: #2c2c2c;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+  .heading {
+    font-size: 2.5em;
+    color: #8cffa0;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .number {
+    width: 50%;
+    /* background-color: #8cffa0; */
+    color: #ffffff;
+    /* border-radius: 50%; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    font-size: 2.5em;
+    /* margin-right: 20px; */
+    margin: 10px 10px 10px;
+    padding: 50px;
+    
+  }
+  .number p{
+    align-items: center;
+    display: flex;
+    justify-content: end;
+    font-size: 50px;
+    color: purple;
+  }
+  .third-container {
+            margin: 0 auto;
+            background-image: url(assets/roadmap-bg.jpg);
+        }
+
+        .card-container {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px; /* Added margin to create space between cards */
+        }
+
+        .custom-card {
+            background-color: #333; /* Dark background color */
+            color: #fff; /* White text color */
+            border-radius: 10px;
+            padding: 20px;
+            max-width: calc(100% - 40px); /* Adjusted width to accommodate the number */
+            display: flex;
+            flex: 1;
+        }
+
+
+        .left-part {
+            display: flex;
+            align-items: center;
+        }
+
+        .right-part {
+            flex: 2;
+            padding-left: 20px;
+        }
+
+        .label {
+            background-color: #4CAF50; /* Green label color */
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            writing-mode: horizontal-tb; /* Sets the label text to horizontal */
+            text-orientation: mixed; /* Allows mixed vertical and horizontal text */
+            transform: rotate(-90deg);
+        }
+
+        .title {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
+        .date {
+            font-size: 1rem;
+            color: #ccc; /* Lighter font color */
+        }
+
+        .text {
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+/* Countdown Section */
+.countdown-section {
+            background-color: #05040a;
+            color: #fff;
+            padding: 50px 0;
+        }
+
+        .countdown-wrapper {
+            text-align: center;
+        }
+
+        .countdown-wrapper h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        #countdown {
+            display: flex;
+            justify-content: center;
+        }
+
+        #countdown div {
+            margin: 0 10px;
+            text-align: center;
+        }
+
+        #countdown div span {
+            font-size: 18px;
+            display: block;
+        }
+
+        .subscription-form {
+            background-image: url(assets/footer-b.jpg);
+            padding: 20px;
+            text-align: center;
+            color: white;
+            height: 30vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .subscription-form h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .subscription-form p {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .subscription-form input[type="email"] {
+            width: 20%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .subscription-form button[type="submit"] {
+            background-color: purple;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .subscription-form button[type="submit"]:hover {
+            background-color: #e65c00;
+        }
+
+        .footer {
+            background-color: #0c0c12;
+            color: #fff;
+            padding: 50px 0;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .footer-column h4 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        .footer-bottom {
+            text-align: center;
+        }
+        .footer-column1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+
+        .social-icons li {
+            margin-right: 10px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #ff0;
+        }
+        .footer a{
+            text-decoration: none;
+            color: white;
+        }
+ 

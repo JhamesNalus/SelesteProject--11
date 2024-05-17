@@ -152,11 +152,25 @@
       padding: 0;
     }
   }
-  /* Comment section styles */
-  .comment-section {
-      padding: 20px;
-      color: white;
-  }
+/* Comment section styles */
+.comment-section {
+    padding: 20px;
+    color: white;
+}
+.comment-section [type="text"] {
+  width: 50%;
+  height: 46px;
+  padding: 20px;
+}
+
+.comment-section textarea {
+  width: 50%;
+  height: 105px;
+}
+
+button {
+  padding: 10px;
+}
   .row{
       display: flex;
       justify-content: center;
